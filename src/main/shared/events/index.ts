@@ -65,6 +65,9 @@ export const Events = {
                 local: 'audio:player:sound:2d',
             },
         },
+        controls: {
+            set: 'player:controls:set',
+        },
         native: {
             invoke: 'player:native:invoke',
         },
@@ -96,6 +99,10 @@ export const Events = {
         },
     },
     systems: {
+        keybinds: {
+            update: 'systems:keybinds:update',
+            invoke: 'systems:keybinds:invoke',
+        },
         messenger: {
             process: 'systems:messenger:process',
             send: 'systems:messenger:send',
